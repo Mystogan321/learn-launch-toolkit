@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				kombee: {
+					background: '#111723',
+					text: '#111723',
+					cream: '#FBF2EB',
+					purple: '#7E00E2',
+					violet: '#BD00FF',
+					'purple-light': '#9b87f5',
 				}
 			},
 			borderRadius: {
