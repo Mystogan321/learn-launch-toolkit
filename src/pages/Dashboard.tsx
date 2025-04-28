@@ -44,8 +44,8 @@ export default function Dashboard() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Learning Statistics */}
-        <div className="kombee-card">
-          <h2 className="text-xl font-bold text-white mb-4">Learning Statistics</h2>
+        <div className="kombee-card shadow-md">
+          <h2 className="text-xl font-bold text-kombee-text mb-4">Learning Statistics</h2>
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded bg-purple-800/20 flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function Dashboard() {
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Total Learning Time</div>
-                <div className="text-xl font-bold text-white">{learningStats.totalLearningTime}</div>
+                <div className="text-xl font-bold text-kombee-text">{learningStats.totalLearningTime}</div>
               </div>
             </div>
             
@@ -63,7 +63,7 @@ export default function Dashboard() {
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Courses Completed</div>
-                <div className="text-xl font-bold text-white">{learningStats.coursesCompleted}</div>
+                <div className="text-xl font-bold text-kombee-text">{learningStats.coursesCompleted}</div>
               </div>
             </div>
             
@@ -73,16 +73,16 @@ export default function Dashboard() {
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Assessments Passed</div>
-                <div className="text-xl font-bold text-white">{learningStats.assessmentsPassed}</div>
+                <div className="text-xl font-bold text-kombee-text">{learningStats.assessmentsPassed}</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Continue Learning */}
-        <div className="kombee-card">
+        <div className="kombee-card shadow-md">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-bold text-white">Continue Learning</h2>
+            <h2 className="text-xl font-bold text-kombee-text">Continue Learning</h2>
             <Link to="/courses" className="text-primary text-sm hover:underline">
               View all
             </Link>
@@ -92,7 +92,7 @@ export default function Dashboard() {
             <div className="mb-4">
               <Book className="w-12 h-12 text-muted-foreground mx-auto" />
             </div>
-            <h3 className="text-lg font-medium text-white mb-2">No courses in progress</h3>
+            <h3 className="text-lg font-medium text-kombee-text mb-2">No courses in progress</h3>
             <p className="text-muted-foreground mb-4">Start a course to see it here.</p>
             <Button asChild className="bg-primary text-white hover:bg-primary/90">
               <Link to="/courses">Browse Courses</Link>
@@ -104,7 +104,7 @@ export default function Dashboard() {
       {/* Recommended Courses */}
       <div className="mt-8">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold text-white">Recommended For You</h2>
+          <h2 className="text-xl font-bold text-kombee-text">Recommended For You</h2>
           <Link to="/courses" className="text-primary text-sm hover:underline">
             View all
           </Link>
@@ -115,12 +115,12 @@ export default function Dashboard() {
             <Link
               to={`/courses/${course.id}`}
               key={course.id}
-              className="kombee-card hover:border-primary/50 transition-colors"
+              className="kombee-card shadow-md hover:border-primary/50 transition-colors"
             >
               <div className="aspect-video bg-card/50 rounded-md mb-3 flex items-center justify-center text-muted-foreground text-sm">
                 Course Thumbnail
               </div>
-              <h3 className="text-lg font-bold text-white mb-1">{course.title}</h3>
+              <h3 className="text-lg font-bold text-kombee-text mb-1">{course.title}</h3>
               <p className="text-muted-foreground text-sm mb-4">{course.subtitle}</p>
               <div className="flex justify-between items-center text-xs text-muted-foreground">
                 <div className="flex items-center">
@@ -138,22 +138,22 @@ export default function Dashboard() {
 
       {/* Quick Links */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        <div className="kombee-card">
-          <h2 className="text-xl font-bold text-white mb-4">Quick Links</h2>
+        <div className="kombee-card shadow-md">
+          <h2 className="text-xl font-bold text-kombee-text mb-4">Quick Links</h2>
           <div className="space-y-3">
             <Link
               to="/courses"
               className="flex items-center gap-3 py-2 px-3 rounded-md hover:bg-card/50 transition-colors"
             >
               <BookOpen className="h-5 w-5 text-primary" />
-              <span className="text-white">All Courses</span>
+              <span className="text-kombee-text">All Courses</span>
             </Link>
             <Link
               to="/assessments"
               className="flex items-center gap-3 py-2 px-3 rounded-md hover:bg-card/50 transition-colors"
             >
               <Award className="h-5 w-5 text-primary" />
-              <span className="text-white">Assessments</span>
+              <span className="text-kombee-text">Assessments</span>
             </Link>
             <Link
               to="/profile"
@@ -174,7 +174,7 @@ export default function Dashboard() {
                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
-              <span className="text-white">My Profile</span>
+              <span className="text-kombee-text">My Profile</span>
             </Link>
             <Link
               to="/admin"
@@ -196,7 +196,7 @@ export default function Dashboard() {
                 <path d="M18.4 9.6a9 9 0 0 0-9.2 9.8"></path>
                 <path d="m8 4 4 4-4 4"></path>
               </svg>
-              <span className="text-white">Admin Dashboard</span>
+              <span className="text-kombee-text">Admin Dashboard</span>
             </Link>
           </div>
         </div>

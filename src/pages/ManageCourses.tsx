@@ -53,7 +53,7 @@ export default function ManageCourses() {
         </Button>
       }
     >
-      <div className="kombee-card">
+      <div className="kombee-card shadow-md border-border/50">
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
@@ -78,7 +78,7 @@ export default function ManageCourses() {
                         No img
                       </div>
                       <div>
-                        <div className="font-medium text-white">{course.title}</div>
+                        <div className="font-medium text-kombee-text">{course.title}</div>
                         <div className="text-xs text-muted-foreground">
                           {course.modules} modules · {course.lessons} lessons
                         </div>
@@ -86,7 +86,7 @@ export default function ManageCourses() {
                     </div>
                   </td>
                   <td className="py-3 px-3">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-secondary text-white">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
                       {course.category}
                     </span>
                   </td>
@@ -117,14 +117,14 @@ export default function ManageCourses() {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="text-muted-foreground hover:text-white"
+                        className="text-muted-foreground hover:text-kombee-text"
                       >
                         <Eye size={18} />
                       </Button>
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="text-muted-foreground hover:text-white"
+                        className="text-muted-foreground hover:text-kombee-text"
                         onClick={() => navigate(`/courses/${course.id}/edit`)}
                       >
                         <Pencil size={18} />
@@ -132,7 +132,7 @@ export default function ManageCourses() {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="text-muted-foreground hover:text-white"
+                        className="text-muted-foreground hover:text-kombee-text"
                       >
                         <X size={18} />
                       </Button>

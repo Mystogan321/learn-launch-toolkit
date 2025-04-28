@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -79,7 +80,7 @@
 
 @layer components {
   .kombee-card {
-    @apply bg-card rounded-lg border border-border/50 p-6 shadow-sm;
+    @apply bg-card rounded-lg border border-border/50 p-6 shadow-md;
   }
   
   .kombee-input {
