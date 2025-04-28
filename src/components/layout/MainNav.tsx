@@ -40,26 +40,26 @@ export function MainNav({ user = { name: "admin-demo", role: "admin" } }: MainNa
             <div className="w-8 h-8 rounded bg-primary flex items-center justify-center">
               <span className="text-white font-bold">K</span>
             </div>
-            <span className="text-2xl font-bold text-white">Kombee</span>
+            <span className="text-2xl font-bold text-kombee-text">Kombee</span>
           </Link>
 
           {/* Main Navigation */}
           <nav className="hidden md:flex gap-6 items-center">
             <Link
               to="/dashboard"
-              className="text-sm font-medium text-white hover:text-primary transition-colors"
+              className="text-sm font-medium text-kombee-text hover:text-primary transition-colors"
             >
               Dashboard
             </Link>
             <Link
               to="/courses"
-              className="text-sm font-medium text-white hover:text-primary transition-colors"
+              className="text-sm font-medium text-kombee-text hover:text-primary transition-colors"
             >
               Courses
             </Link>
             <Link
               to="/admin"
-              className="text-sm font-medium text-white hover:text-primary transition-colors"
+              className="text-sm font-medium text-kombee-text hover:text-primary transition-colors"
             >
               Admin
             </Link>
@@ -68,7 +68,7 @@ export function MainNav({ user = { name: "admin-demo", role: "admin" } }: MainNa
 
         <div className="ml-auto flex items-center gap-4">
           {/* Notifications */}
-          <button className="relative rounded-full p-1.5 text-white hover:bg-white/10">
+          <button className="relative rounded-full p-1.5 text-kombee-text hover:bg-white/10">
             <Bell size={20} />
           </button>
 

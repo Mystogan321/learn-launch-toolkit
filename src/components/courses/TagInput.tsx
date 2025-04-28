@@ -61,18 +61,18 @@ export function TagInput({
   };
 
   return (
-    <div className="flex flex-wrap items-center border rounded-md bg-kombee-background p-1.5 gap-1.5">
+    <div className="flex flex-wrap items-center border rounded-md bg-white p-1.5 gap-1.5">
       {/* Render existing tags */}
       {value.map((tag) => (
         <div
           key={tag}
-          className="flex items-center gap-1 py-1 px-2 rounded-full bg-primary/20 text-primary-foreground text-sm"
+          className="flex items-center gap-1 py-1 px-2 rounded-full bg-primary/20 text-primary text-sm"
         >
           <span>{tag}</span>
           <button
             type="button"
             onClick={() => removeTag(tag)}
-            className="text-primary-foreground hover:text-white focus:outline-none"
+            className="text-primary hover:text-primary/80 focus:outline-none"
           >
             <X size={14} />
           </button>
@@ -86,7 +86,7 @@ export function TagInput({
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder={value.length === 0 ? placeholder : ""}
-        className="flex-1 bg-transparent border-none text-white placeholder-muted-foreground focus:outline-none focus:ring-0 text-sm min-w-[120px]"
+        className="flex-1 bg-transparent border-none text-kombee-text placeholder-muted-foreground focus:outline-none focus:ring-0 text-sm min-w-[120px]"
       />
     </div>
   );
