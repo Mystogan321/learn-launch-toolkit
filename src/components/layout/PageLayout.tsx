@@ -20,7 +20,7 @@ export function PageLayout({ children, title, subtitle, action }: PageLayoutProp
         {(title || action) && (
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
             <div>
-              {title && <h1 className="text-2xl md:text-3xl font-bold text-white">{title}</h1>}
+              {title && <h1 className="text-2xl md:text-3xl font-bold text-kombee-text">{title}</h1>}
               {subtitle && <p className="text-muted-foreground mt-1">{subtitle}</p>}
             </div>
             {action && <div className="mt-4 sm:mt-0">{action}</div>}

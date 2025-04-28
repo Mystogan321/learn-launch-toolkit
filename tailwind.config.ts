@@ -64,7 +64,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				kombee: {
-					background: '#111723',
+					background: '#FBF2EB',
 					text: '#111723',
 					cream: '#FBF2EB',
 					purple: '#7E00E2',
