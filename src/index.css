@@ -15,7 +15,7 @@
     --popover-foreground: 222 47% 11%;
 
     --primary: 277 100% 44%;  /* Purple brand color */
-    --primary-foreground: 222 47% 11%;  /* Dark text on primary */
+    --primary-foreground: 0 0% 100%;  /* White text on primary */
 
     --secondary: 280 59% 98%;  /* Very light purple */
     --secondary-foreground: 277 84% 30%;  /* Darker purple on secondary */
@@ -80,7 +80,7 @@
 
 @layer components {
   .kombee-card {
-    @apply bg-card rounded-lg border border-border/50 p-6 shadow-md;
+    @apply bg-card rounded-lg border border-border/50 p-6 shadow-lg outline outline-1 outline-border/10;
   }
   
   .kombee-input {
@@ -90,7 +90,7 @@
   }
 
   .kombee-btn-primary {
-    @apply bg-primary hover:bg-primary/90 text-primary-foreground rounded-md px-4 py-2 text-sm 
+    @apply bg-primary hover:bg-primary/90 text-white rounded-md px-4 py-2 text-sm 
            font-medium shadow transition-colors focus:outline-none focus:ring-2 focus:ring-primary 
            disabled:pointer-events-none disabled:opacity-50;
   }
